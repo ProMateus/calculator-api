@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
