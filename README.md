@@ -133,15 +133,19 @@ Projekt wykorzystuje:
 
 Swagger UI:
 
-```
-http://34.209.124.6:8000/docs
-```
+http://calculator-alb-617748064.us-west-2.elb.amazonaws.com/docs
 
 OpenAPI:
 
-```
-http://34.209.124.6:8000/openapi.json
-```
+http://calculator-alb-617748064.us-west-2.elb.amazonaws.com/openapi.json
+
+Health:
+
+http://calculator-alb-617748064.us-west-2.elb.amazonaws.com/health
+
+Version:
+
+http://calculator-alb-617748064.us-west-2.elb.amazonaws.com/version
 
 ---
 
