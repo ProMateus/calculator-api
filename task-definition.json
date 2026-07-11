@@ -1,0 +1,32 @@
+{
+  "family": "calculator-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::574772738136:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "calculator-api",
+      "image": "574772738136.dkr.ecr.us-west-2.amazonaws.com/calculator-api:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/calculator-api",
+          "awslogs-region": "us-west-2",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+
+    }
+  ]
+}

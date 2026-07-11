@@ -114,9 +114,13 @@ Projekt wykorzystuje:
 
 - Amazon ECR
 - Amazon ECS Fargate
+- Application Load Balancer
+- Amazon CloudWatch Logs
 - IAM
 - VPC
 - Security Groups
+
+Logi aplikacji uruchomionej w Amazon ECS są przesyłane do grupy logów `/ecs/calculator-api` w Amazon CloudWatch Logs.
 
 ---
 
